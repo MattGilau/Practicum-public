@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             //Explicit intent to specify the Activity MainScreen class should be started
             val intent = Intent(this, MainScreen::class.java)                          //(IIE, 2024)
 
-            // Start MainActivityMainScreen using the intent created
+            // Start Activity MainScreen using the intent created
             startActivity(intent)                                                                   //(IIE, 2024)
 
             // Logs to provide warnings, debugging assistance and verbose comments (manual testing)
