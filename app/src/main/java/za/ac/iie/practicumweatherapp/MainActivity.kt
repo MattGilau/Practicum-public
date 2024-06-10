@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         btnStart = findViewById(R.id.btnStart)                                                      //(Mhlanga, 2024)
 
         // Lambda expression for the button function
-        btnStart.setOnClickListener {
+        btnStart.setOnClickListener {                                                        //(IIE, 2024)
 
             //Pop-up msg for when start button clicked
             Toast.makeText(this@MainActivity, "Starting", Toast.LENGTH_SHORT)
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Lambda expression for the button function
-        btnExit.setOnClickListener {
+        btnExit.setOnClickListener {                                                         //(IIE, 2024)
 
             // Pop-up msg to indicate the app will close
             Toast.makeText(this@MainActivity, "Exiting", Toast.LENGTH_SHORT)
