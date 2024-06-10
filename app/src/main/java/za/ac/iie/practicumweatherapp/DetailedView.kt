@@ -41,9 +41,9 @@ class DetailedView : AppCompatActivity() {
         val weatherConText = weatherCon.joinToString(separator = "\n")                              //(Mhlanga, 2024)
 
         txtDay.text = "Days:\n$daysText"                                                            //(IIE, 2024)
-        txtMin.text = "Min Temperatures:\n$minTempText"                                             //(IIE, 2024)
-        txtMax.text = "Max Temperatures:\n$maxTempText"                                             //(IIE, 2024)
-        txtCon.text = "Conditions:\n$weatherConText"                                                //(IIE, 2024)
+        txtMin.text = "Min:\n$minTempText"                                                          //(IIE, 2024)
+        txtMax.text = "Max:\n$maxTempText"                                                          //(IIE, 2024)
+        txtCon.text = "Weather Conditions:\n$weatherConText"                                        //(IIE, 2024)
 
         btnBack.setOnClickListener {
             //Pop-up msg for when transition to detailed view clicked
@@ -60,8 +60,16 @@ class DetailedView : AppCompatActivity() {
             // Debug logs allow me to test whether the screen transition executes
             Log.w("Back btn", "Starting of the second screen not " +                       //(IIE, 2024)
                     "tested for exceptions.")
-            Log.d("Back btn", "Button 'CLICK TO START!' clicked to navigate" +             //(IIE, 2024)
-                    " to MainActivityMainScreen.")
+            Log.d("Back btn", "transition to previous screen.")
         }
     }
+    /*  Reference List:
+
+        Developers. 2024. Intent. [Online]. Available At: https://developer.android.com/
+            [Accessed 10 June 2024].
+        Mhlanga, S. 2024. IMAD5112 Instructor, The Independent Institution of Education.
+            [IMAD5112 Session]. Semester 1 2024.
+        The IIE. 2024. Introduction to Mobile Application Development [IMAD5112 Module Manual].
+            The Independent Institution of Education: Unpublished.
+     */
 }

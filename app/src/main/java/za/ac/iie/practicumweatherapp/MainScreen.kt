@@ -17,13 +17,13 @@ class MainScreen : AppCompatActivity() {
         "Friday", "Saturday", "Sunday")
 
     // Initialise the empty array of type integer for the minimum temperatures in the form of a
-    private var minTemp = arrayOf<Int>()                                                            //(IIE, 2024)
+    private var minTemp = arrayOf<Int>().toIntArray()                                               //(Developers, 2024)
 
     // Initialise the empty array of type integer for the maximum temperatures
-    private var maxTemp = arrayOf<Int>()                                                            //(IIE, 2024)
+    private var maxTemp = arrayOf<Int>().toIntArray()                                               //(Developers, 2024)
 
     // Initialise the empty array of type string for the weather conditions
-    private var weatherCon = arrayOf<String>()                                                      //(IIE, 2024)
+    private var weatherCon = arrayOf<String>()                                                      //(Developers, 2024)
 
     // Initialise the variables used to calculate total temp and ave temp
     private var minSum = 0                                                                          //(IIE, 2024)
@@ -123,6 +123,7 @@ class MainScreen : AppCompatActivity() {
             maxTemp = maxTemp + max                                                                 //(IIE, 2024)
             weatherCon = weatherCon + condition                                                     //(IIE, 2024)
 
+
             // Clear the edit text views for next input
             enterMin.text.clear()                                                                   //(Mhlanga, 2024)
             enterMax.text.clear()                                                                   //(Mhlanga, 2024)
@@ -193,9 +194,9 @@ class MainScreen : AppCompatActivity() {
         enterCondition.text.clear()                                                                 //(Mhlanga, 2024)
 
         // Set the arrays back to empty
-        minTemp = arrayOf<Int>()                                                                    //(Mhlanga, 2024)
-        maxTemp = arrayOf<Int>()                                                                    //(Mhlanga, 2024)
-        weatherCon = arrayOf<String>()                                                              //(Mhlanga, 2024)
+        minTemp = arrayOf<Int>().toIntArray()                                                       //(Mhlanga, 2024)
+        maxTemp = arrayOf<Int>().toIntArray()                                                       //(Mhlanga, 2024)
+        weatherCon = arrayOf()                                                                      //(Mhlanga, 2024)
 
 
         Log.d("clearAll", "execute function - clear fields")                               //(IIE, 2024)
@@ -207,7 +208,20 @@ class MainScreen : AppCompatActivity() {
         Toast.makeText(this@MainScreen, "Exiting", Toast.LENGTH_SHORT)
             .show()                                                                                 //(IIE, 2024)
         // Closes all activities and exits the app
-        finishAffinity()                                                                            //(starball, 2022)
+        finishAffinity()                                                                            //(James_Duh, 2018)
         Log.d("exit", "execute function - close app")                                      //(IIE, 2024)
     }
+    /*  Reference List:
+
+        Developers. 2024. Arrays. [Online]. Available At: https://developer.android.com/
+            [Accessed 10 June 2024].
+        James_Duh. 2018. How to close Android application in Kotlin. [Online].
+            Available at: https://stackoverflow.com/questions/51831820/how-to-close-android-
+            application-in-kotlin  [Accessed 10 June 2024].
+        Mhlanga, S. 2024. IMAD5112 Instructor, The Independent Institution of Education.
+            [IMAD5112 Session]. Semester 1 2024.
+        The IIE. 2024. Introduction to Mobile Application Development [IMAD5112 Module Manual].
+            The Independent Institution of Education: Unpublished.
+
+     */
 }

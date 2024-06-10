@@ -52,10 +52,22 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity, "Exiting", Toast.LENGTH_SHORT)
                 .show()                                                                             //(IIE, 2024)
             // Closes all activities and exits the app
-            finishAffinity()                                                                        //(starball, 2022)
+            finishAffinity()                                                                        //(James_Duh, 2018)
 
         }
         // Debug log to ensure the Main Activity is initialised upon start-up
         Log.d("MainActivity", "onCreate method called when MainActivity initialised.")     //(IIE, 2024)
     }
+    /*  Reference List:
+
+        James_Duh. 2018. How to close Android application in Kotlin. [Online].
+            Available at: https://stackoverflow.com/questions/51831820/how-to-close-android-
+            application-in-kotlin  [Accessed 10 June 2024].
+        Mhlanga, S. 2024. IMAD5112 Instructor, The Independent Institution of Education.
+            [IMAD5112 Session]. Semester 1 2024.
+        The IIE. 2024. Introduction to Mobile Application Development [IMAD5112 Module Manual].
+            The Independent Institution of Education: Unpublished.
+
+
+     */
 }
