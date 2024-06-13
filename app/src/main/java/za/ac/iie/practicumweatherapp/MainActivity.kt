@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
+    // PLEASE NOTE: Code was pushed to the master branch
 
     // Declarations of palettes with lateinit modifier for deferred initialisation
     private lateinit var btnExit: Button                                                            //(Mhlanga, 2024)

@@ -9,7 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 
 class DetailedView : AppCompatActivity() {
-
+    // PLEASE NOTE: Code was pushed to the master branch
     // Declarations of palettes with lateinit modifier for deferred initialisation
     private lateinit var btnBack: Button                                                            //(Mhlanga, 2024)
     private lateinit var txtDay: TextView                                                           //(Mhlanga, 2024)

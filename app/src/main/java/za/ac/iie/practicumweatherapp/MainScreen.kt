@@ -11,7 +11,7 @@ import android.widget.Toast
 import kotlin.math.roundToInt
 
 class MainScreen : AppCompatActivity() {
-
+    // PLEASE NOTE: Code was pushed to the master branch
     // Initialise the array off type string for the fixed days of the week
     private val weekDays = arrayOf<String>("Monday", "Tuesday", "Wednesday", "Thursday",            //(IIE, 2024)
         "Friday", "Saturday", "Sunday")
